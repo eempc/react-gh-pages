@@ -1,3 +1,15 @@
+# App Design
+
+I have no idea what I am going to build in React and what functions I want to demonstrate.
+What can I do in React that I can't do in JavaScript?
+
+# Instructions for set up and initial deployment
+
+## TLDR version to create a React App on Github Pages
+
+`npm run deploy` should update the live version
+`git push origin master` will update the repo
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
