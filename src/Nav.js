@@ -19,7 +19,7 @@ class Nav extends React.Component {
                     <LinkButton textContent={'About'} className={'link-button link-hover'} />
                     <LinkButton textContent={'Contact'} className={'link-button link-hover'} />
                     <LinkButton textContent={'Portfolio'} className={'link-button link-hover'} />
-                    <LinkButton textContent={'CV'} className={'link-button link-hover'} />
+
                 </nav>
             </div>
         );

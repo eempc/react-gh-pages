@@ -7,7 +7,13 @@
     align-items: center;
     padding: 10px 32px;
 }
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 
+}
 .logo {
     width: 120px;
     height: 120px;
@@ -29,13 +35,7 @@
     }
 }
 
-nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center;
 
-}
 
 .link-button {
     margin: 0px 20px;
