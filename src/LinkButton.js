@@ -26,10 +26,11 @@ class LinkButton extends React.Component {
                 ReactDOM.render(<Portfolio />, root);
                 break;
             default:
-                ReactDOM.render(<App />, root);
+                ReactDOM.render(<Home />, root);
         }
     }
 
+    // LinkButton, you pass in two arguments, textContent should have matching names to a jsx file, and className
     render() {
         return (
             <div>

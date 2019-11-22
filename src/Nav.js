@@ -1,50 +1,26 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import logo from './logo.svg';
 import './Nav.css';
+import LinkButton from './LinkButton';
+import ReactDOM from 'react-dom';
 import Home from './Home';
-import About from './About';
-import Contact from './Contact';
-import Portfolio from './Portfolio';
-import App from './App';
-
 
 class Nav extends React.Component {
-    loadPage(event) {
-        const root = document.getElementById('root');
-        let buttonText = event.target.innerHTML;
-
-        switch (buttonText) {
-            case 'Home':
-                ReactDOM.render(<Home />, root);
-                break;
-            case 'About':
-                ReactDOM.render(<About />, root);
-                break;
-            case 'Contact':
-                ReactDOM.render(<Contact />, root);
-                break;
-            case 'Portfolio':
-                ReactDOM.render(<Portfolio />, root);
-                break;
-            default:
-                ReactDOM.render(<App />, root);
-        }
+    goHome() {
+        ReactDOM.render(<Home />, document.getElementById('root'));
     }
 
     render() {
         return (
             <div className="nav">
-                <div className="left-nav">
-                    <img src={logo} className="logo" alt="logo" />
-                </div>
-                <div className="right-nav">
-                    <button onClick={this.loadPage} className="link-button">Home</button>
-                    <button onClick={this.loadPage} className="link-button">About</button>
-                    <button onClick={this.loadPage} className="link-button">Portfolio</button>
-                    <button onClick={this.loadPage} className="link-button">CV</button>
-                    <button onClick={this.loadPage} className="link-button">Contact</button>
-                </div>
+                <img src={logo} className="logo rotate-hover" alt="logo" onClick={this.goHome} />
+                <nav>
+                    <LinkButton textContent={'Home'} className={'link-button link-hover'} />
+                    <LinkButton textContent={'About'} className={'link-button link-hover'} />
+                    <LinkButton textContent={'Contact'} className={'link-button link-hover'} />
+                    <LinkButton textContent={'Portfolio'} className={'link-button link-hover'} />
+                    <LinkButton textContent={'CV'} className={'link-button link-hover'} />
+                </nav>
             </div>
         );
     }

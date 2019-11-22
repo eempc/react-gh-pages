@@ -1,5 +1,5 @@
 * {
-  outline: 1px dotted black;
+  outline: 1px dotted yellow;
   box-sizing: border-box;
 }
 
@@ -10,7 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(90deg, rgb(161, 161, 161) 0%, rgba(126, 126, 126, 1) 35%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(90deg, rgb(99, 99, 99) 0%, rgb(66, 66, 66) 35%, rgba(0, 0, 0, 1) 100%);
   background-repeat: repeat;
 }
 

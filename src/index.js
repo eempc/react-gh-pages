@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Nav from './Nav';
 import * as serviceWorker from './serviceWorker';
-import App from './App';
 import Home from './Home';
 
 ReactDOM.render(<Nav />, document.getElementById('header'));

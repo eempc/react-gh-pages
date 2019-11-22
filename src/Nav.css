@@ -11,9 +11,25 @@
 .logo {
     width: 120px;
     height: 120px;
+    cursor: pointer;
+
 }
 
-.right-nav {
+.rotate-hover:hover {
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+nav {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
@@ -30,6 +46,7 @@
     text-decoration: none;
     font-size: 24px;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .main-button {
@@ -41,6 +58,13 @@
     text-decoration: none;
     font-size: 32px;
     background-color: transparent;
+    cursor: pointer;
+}
+
+.link-hover:hover {
+    background-color: green;
+    transform: scale(1.2);
+    transition: 2s;
 }
 
 /* Headers and Texts */
