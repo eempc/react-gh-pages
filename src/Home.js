@@ -1,16 +1,15 @@
 import React from 'react';
-import './Home.css';
+import './Nav.css';
 
 class Home extends React.Component {
     render() {
         return (
-            <div className="home">
-                <div className="my-name">Evelyn Cheng</div>
-                <div className="buttons">
+            <div>
+                <h1>Evelyn Cheng</h1>
+                <div className="buttons-row">
                     <button onClick={this.loadPage} className="main-button">CV</button>
                     <button onClick={this.loadPage} className="main-button">Contact</button>
                 </div>
-
             </div>
         );
     }
