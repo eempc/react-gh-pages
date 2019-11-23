@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './Nav.css';
+import './LinkButton.css';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
@@ -33,10 +33,8 @@ class LinkButton extends React.Component {
     // LinkButton, you pass in two arguments, textContent should have matching names to a jsx file, and className
     render() {
         return (
-            <div>
-                <button onClick={this.loadPage} className={this.props.className}>
+            <div className={this.props.className} onClick={this.loadPage}>
                     {this.props.textContent}
-                </button>
             </div>
         );
     }

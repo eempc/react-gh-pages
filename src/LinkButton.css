@@ -1,0 +1,42 @@
+.link-button {
+    margin: 10px;
+    padding: 10px;
+    width: 12%;
+    color: white;
+    text-align: center;
+    border: 3px solid white;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+.link-hover:hover {
+    background-color: green;
+    transform: scale(1.2);
+    transition: 2s;
+}
+
+.main-button {
+    padding: 10px;
+    margin: 8px;
+    border: 4px solid white;
+    font-size: 1.7vw;
+    cursor: pointer;
+    width: 45%;
+}
+
+@media (max-width: 1025px) {
+    .main-button {
+        font-size: 3vw;
+    }
+
+    .link-button {
+        width: 17%;
+        font-size: 2.7vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-button {
+        font-size: 4vw;
+    }
+}

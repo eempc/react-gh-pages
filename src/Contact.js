@@ -6,6 +6,9 @@ class Contact extends React.Component {
         return (
             <div>
                 <h2>Contact</h2>
+                <p>
+                    If you are viewing this site, you already have my contact details.
+                </p>
             </div>
         );
     }

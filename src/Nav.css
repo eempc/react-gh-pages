@@ -7,16 +7,21 @@
     align-items: center;
     padding: 10px 32px;
 }
+
 nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
 
+    flex-wrap: wrap;
+            flex-grow: 1;
 }
+
+
+
 .logo {
-    width: 120px;
-    height: 120px;
+    width: 10%;
     cursor: pointer;
 
 }
@@ -25,57 +30,13 @@ nav {
     animation: rotation 8s infinite linear;
 }
 
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(359deg);
-    }
-}
 
 
 
-.link-button {
-    margin: 0px 20px;
-    width: 128px;
-    color: white;
-    text-align: center;
-    border: 4px solid white;
-    text-decoration: none;
-    font-size: 24px;
-    background-color: transparent;
-    cursor: pointer;
-}
 
-.main-button {
-    margin: 0px;
-    width: 250px;
-    color: white;
-    text-align: center;
-    border: 4px solid white;
-    text-decoration: none;
-    font-size: 32px;
-    background-color: transparent;
-    cursor: pointer;
-}
 
-.link-hover:hover {
-    background-color: green;
-    transform: scale(1.2);
-    transition: 2s;
-}
 
 /* Headers and Texts */
-
-h1 {
-    font-size: 84px;
-    color: white;
-    margin: 100px auto 12px auto;
-    width: 600px;
-    text-align: center;
-}
 
 h2 {
         font-size: 64px;
@@ -101,12 +62,39 @@ p {
 /* Specific pages */
 /* Home */
 
-.buttons-row {
+.home-container {
+
+    min-height: 60vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-main {
+    color: white;
+    width: 50%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+h1 {
+    font-size: 5vw;
+    width: 100%;
+}
+
+.buttons-row {
+    width: 100%;
+    display: flex;
     justify-content: space-between;
-    width: 600px;
-    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Portfolio */
@@ -118,4 +106,58 @@ p {
 .project-box {
     width: 25%;
     margin: 24px;
+}
+
+@media (max-width: 1025px) {
+    .home-main {
+        width: 66%;
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    nav {
+
+
+    }
+}
+
+@media (max-width: 480px) {
+    .home-main {
+        width: 100%;
+
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+
+    nav {
+        display: none;
+    }
+
+    .nav {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 25%;
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
 }
