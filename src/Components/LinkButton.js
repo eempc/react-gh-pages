@@ -5,7 +5,6 @@ import Home from '../Home';
 import About from '../About';
 import Contact from '../Contact';
 import Portfolio from '../Portfolio';
-import App from '../App';
 
 class LinkButton extends React.Component {
     loadPage(event) {

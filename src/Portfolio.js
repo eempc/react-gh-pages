@@ -1,20 +1,20 @@
 import React from 'react';
-import './Nav.css';
+import './Portfolio.css';
 
 class Portfolio extends React.Component {
     render() {
         return (
-            <div>
+            <div className="portfolio-container">
                 <h2>Portfolio</h2>
                 <div className="portfolio-row">
                     <div className="project-box">
-                        <h3>ASP.NET Core 3.0 Web App</h3>
+                        <h3>ASP.NET Core 3.0</h3>
                     </div>
                     <div className="project-box">
-                        <h3>Xamarin Android App</h3>
+                        <h3>Xamarin Android</h3>
                     </div>
                     <div className="project-box">
-                        <h3>Something else - maybe a WPF app</h3>
+                        <h3>Maybe WPF/Winforms</h3>
                     </div>
                 </div>
             </div>

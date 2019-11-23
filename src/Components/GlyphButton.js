@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './GlyphButton.css';
 import github from './images/github.png';
 import azure from './images/azure.png';
@@ -11,17 +10,17 @@ class GlyphButton extends React.Component {
 
         switch (this.props.glyphName) {
             case 'GitHub':
-                img = <img className="glyph-button" src={github} />;
+                img = <img className="glyph-button" src={github} alt="github logo" />;
                 break;
             case 'Azure':
-                img = <img className="glyph-button" src={azure} />;
+                img = <img className="glyph-button" src={azure} alt="azure logo" />;
                 break;
             default:
-                img = <img className="glyph-button" src={xunit} />;
+                img = <img className="glyph-button" src={xunit} alt="xunit logo" />;
         }
 
         return (
-            <a href={this.props.url} target="_blank">
+            <a href={this.props.url} target="_blank" rel="noopener noreferrer">
                 {img}
             </a>
         );

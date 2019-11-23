@@ -75,16 +75,7 @@ h1 {
     margin: auto;
 }
 
-/* Portfolio */
-.portfolio-row {
-    display: flex;
-    justify-content: center;
-}
 
-.project-box {
-    width: 25%;
-    margin: 24px;
-}
 
 .hidden {
     display: none;

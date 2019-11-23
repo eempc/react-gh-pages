@@ -1,0 +1,25 @@
+/* Portfolio */
+.portfolio-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    width: 25%;
+    margin: 24px;
+}
+
+@media (max-width: 1025px) {
+    .project-box {
+        width: 45%;
+        margin: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-box {
+        width: 90%;
+        margin: 8px;
+    }
+}
