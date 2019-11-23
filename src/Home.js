@@ -1,6 +1,6 @@
 import React from 'react';
-import './Nav.css';
-import LinkButton from './LinkButton';
+import './Home.css';
+import LinkButton from './Components/LinkButton';
 
 class Home extends React.Component {
     render() {
@@ -8,10 +8,13 @@ class Home extends React.Component {
             <div className="home-container">
                 <div className="home-main">
                     <h1>Evelyn Cheng</h1>
-                    <div className="buttons-row hidden">
+                    <div className="buttons-row">
+                        <LinkButton textContent={'About'} className={'main-button'} />
                         <LinkButton textContent={'Contact'} className={'main-button'} />
                         <LinkButton textContent={'Portfolio'} className={'main-button'} />
+
                     </div>
+
                 </div>
             </div>
         );

@@ -1,0 +1,43 @@
+.buttons-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Specific pages */
+/* Home */
+
+.home-container {
+
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-main {
+    color: white;
+    width: 50%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+@media (max-width: 1025px) {
+    .home-main {
+        width: 66%;
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-main {
+        width: 100%;
+
+    }
+}
