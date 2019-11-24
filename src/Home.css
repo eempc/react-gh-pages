@@ -28,6 +28,16 @@
 
 }
 
+.updown {
+    transform-origin: top;
+    transition: transform .5s;
+    transform: scaleY(0);
+}
+
+.hidden {
+    display: none;
+}
+
 @media (max-width: 1025px) {
     .home-main {
         width: 66%;

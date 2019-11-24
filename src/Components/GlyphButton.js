@@ -10,13 +10,13 @@ class GlyphButton extends React.Component {
 
         switch (this.props.glyphName) {
             case 'GitHub':
-                img = <img className="glyph-button" src={github} alt="github logo" />;
+                img = <img className="glyph-button link-hover" src={github} alt="github logo" />;
                 break;
             case 'Azure':
-                img = <img className="glyph-button" src={azure} alt="azure logo" />;
+                img = <img className="glyph-button link-hover" src={azure} alt="azure logo" />;
                 break;
             default:
-                img = <img className="glyph-button" src={xunit} alt="xunit logo" />;
+                img = <img className="glyph-button link-hover" src={xunit} alt="xunit logo" />;
         }
 
         return (

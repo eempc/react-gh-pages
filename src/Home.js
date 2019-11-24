@@ -8,13 +8,12 @@ class Home extends React.Component {
             <div className="home-container">
                 <div className="home-main">
                     <h1>Evelyn Cheng</h1>
-                    <div className="buttons-row">
+                    <p>Under construction</p>
+                    <div className="buttons-row hidden">
                         <LinkButton textContent={'About'} className={'main-button'} />
                         <LinkButton textContent={'Contact'} className={'main-button'} />
                         <LinkButton textContent={'Portfolio'} className={'main-button'} />
-
                     </div>
-
                 </div>
             </div>
         );

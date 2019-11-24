@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './www.png';
 import './Nav.css';
 import LinkButton from './Components/LinkButton';
 import GlyphButton from './Components/GlyphButton';
@@ -20,8 +20,8 @@ class Nav extends React.Component {
                     <LinkButton textContent={'About'} className={'link-button link-hover'} />
                     <LinkButton textContent={'Contact'} className={'link-button link-hover'} />
                     <LinkButton textContent={'Portfolio'} className={'link-button link-hover'} />
-                    <GlyphButton glyphName={'GitHub'} url={'https://www.github.com'} />
-                    <GlyphButton glyphName={'Azure'} url={'https://www.azure.com'} />
+                    <GlyphButton glyphName={'GitHub'} url={'https://www.github.com/eempc'} />
+                    <GlyphButton glyphName={'Azure'} url={'https://aspfeaturesdemonstration20191122095216.azurewebsites.net/'} />
                 </nav>
             </div>
         );

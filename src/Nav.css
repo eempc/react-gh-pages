@@ -18,8 +18,6 @@ nav {
             flex-grow: 1;
 }
 
-
-
 .logo {
     width: 10%;
     cursor: pointer;
@@ -30,13 +28,11 @@ nav {
     animation: rotation 8s infinite linear;
 }
 
-
-
-
-
-
-
 /* Common Headers and Texts */
+h1 {
+    font-size: 5vw;
+    width: 100%;
+}
 
 h2 {
         font-size: 64px;
@@ -59,23 +55,12 @@ p {
     margin: auto;
 }
 
-
-
-h1 {
-    font-size: 5vw;
-    width: 100%;
-}
-
-
-
 /* ABout */
 
 .about-container {
     width: 75%;
     margin: auto;
 }
-
-
 
 .hidden {
     display: none;
